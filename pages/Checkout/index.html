@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="checkout.css">
+    <title>Checkout Template</title>
+</head>
+<body>
+    
+    <section class="main">
+        <!-- List of products in cart -->
+        <aside class="cart">
+            <div class="cart-items"></div>
+            <div class="cart-items"></div>
+            <div class="cart-items"></div>
+        </aside>
+        
+
+        <aside class="info-container">
+            <div class="info">
+              <p>Shipping Information</p>
+                <input required type="text" placeholder="Full Name">
+                <input required type="text" placeholder="Address">
+                <input required type="text" placeholder="City">
+                <input required type="text" placeholder="State">
+                <input required type="text" placeholder="Zip Code">
+
+                
+            </div>
+            <div class="cardInfo">
+                <p>Card Information</p>
+                <input type="text" placeholder="Cardholder Name">
+                <input type="text" placeholder="Card Number">
+                <input type="text" placeholder="MM/YY">
+                <input type="text" placeholder="CVV">
+            </div>
+            <div class="coupons">
+                <p>Coupons</p>
+                <input type="text" placeholder="Enter Coupon Code">
+                <button>Apply</button>
+            </div>
+            
+        </aside>
+        
+    </section>
+    <section class="total">
+        <h1>Total: $0.00</h1>
+        <div class="button-container">
+                <button id="checkout-button">Checkout</button>
+            </div>  
+    </section>
+    
+
+</body>
+</html>
