@@ -4,18 +4,15 @@
     box-sizing: border-box;
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #000;
-}
-
 div{
     display: flex;
     margin-top: 20px;
     gap: 75px;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-around;
 }
 
 .current-menu{
@@ -23,20 +20,19 @@ div{
 }
 
 #container{
-    width: 1500px;
-    height:750px;
-    margin-left: auto;
-    border: 1px solid red;
+    margin: 0px 0px 10px 0px;
     display: grid;
     grid-template-columns: repeat(3, 30%);
+    flex-grow: 1;
 }
 
 .card{
     border: 1px solid #000;
-    margin: 20px;
+    margin: 20 px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    border-radius: 10px;
 }
 
 .card p{
@@ -50,7 +46,6 @@ div{
 #price{
     width: 500px;
     height: 25px;
-    border: 1px solid red;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -66,4 +61,10 @@ div{
 
 h3:hover{
     cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: inherit;
+    border-radius: 10px 10px 0px 0px;
 }
