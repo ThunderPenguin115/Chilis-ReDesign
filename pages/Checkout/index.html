@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="checkout.css" type="text/css">
     <title>Checkout Template</title>
 </head>
 <body>
@@ -44,6 +44,7 @@
                     <p>State</p>
                     <select name="states" id="states">
                         <option value="states">Select State</option>
+                        
                     </select>
                 </div>
                 <div>
@@ -73,11 +74,15 @@
                     <input type="number" placeholder="CVV">
                 </div>
                 
+                
+                
+                
             </div>
             <div class="coupons">
                 <p><strong>Coupon Code</strong></p>
-                <input type="text" placeholder="Enter Coupon Code">
-                <button>Apply</button>
+                <input id="potentialCode" type="text" placeholder="Enter Coupon Code">
+                <!-- <button onClick="applyCouponCode()">Apply</button> -->
+                <button id="applyCoupon">Apply</button>
             </div>
             
         </aside>
@@ -90,6 +95,6 @@
             </div>  
     </section>
     
-    <link rel="script" src="checkout.js"></script>
+    <script rel="script" src="checkout.js"></script>
 </body>
 </html>
